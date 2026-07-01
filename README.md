@@ -1,7 +1,60 @@
 # Hi there, I'm [Your Name] 👋
-### Game Server Developer & Fullstack Game Ecosystem Architect 🚀
+
+<p align="left">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F59E0B&width=450&lines=Game+Server+Developer;C%2B%2B+Server+Plugin+Engineer;Laravel+Fullstack+Developer;Flutter+Mobile+App+Builder;ARK+Ecosystem+Architect" alt="Typing SVG" />
+  </a>
+</p>
 
 I specialize in building end-to-end ecosystems for high-traffic game servers, with a deep focus on **ARK: Survival Evolved (ASE)** and **ARK: Survival Ascended (ASA)**. My work spans low-level game engine hooking in C++, high-performance companion mobile apps (Flutter), robust web administration portals (Laravel), automation bots (Node.js), and asset extraction pipelines (Python).
+
+---
+
+### 🌐 Live Ecosystem Status
+[![Web Portal](https://img.shields.io/badge/Live_Dashboard-Visit_Web-orange?style=for-the-badge&logo=laravel)](http://ark.lokagamers.com)
+[![Android App](https://img.shields.io/badge/Android_App-In_Development-blue?style=for-the-badge&logo=android)](#)
+
+---
+
+### 🏛️ System Architecture
+
+Here is how the components of the game server ecosystem communicate and synchronize data:
+
+```mermaid
+graph TD
+    classDef default fill:#1e1e24,stroke:#333,stroke-width:2px,color:#fff;
+    classDef highlight fill:#f59e0b,stroke:#d97706,stroke-width:2px,color:#000;
+    
+    subgraph Game Server [ARK Server Cluster]
+        A[Game Server Process] <-->|Ark Server API Hooking| B[C++ Plugins: LokaCrossChat, LokaCloud, Notifier]
+    end
+    
+    subgraph Database [Database Layer]
+        C[(MySQL: Game & Web DB)]
+    end
+    
+    subgraph Web [Web Backend & Portal]
+        D[Loka Laravel Dashboard]
+    end
+    
+    subgraph Clients [User Interfaces]
+        E[Flutter Mobile Client]
+        F[Discord Bot]
+    end
+    
+    subgraph Gateways [Payment Systems]
+        G[PayPal & Sociabuzz API]
+    end
+
+    B <-->|Live SQL Sync| C
+    D <-->|Eloquent ORM & Transaksi| C
+    D -->|RCON Commands| A
+    E <-->|REST APIs / Cookie Session Bridge| D
+    F <-->|RCON status & Chat Broadcast| A
+    G -->|Automated Webhooks| D
+
+    class D,E,B highlight;
+```
 
 ---
 
