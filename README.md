@@ -6,12 +6,14 @@
   </a>
 </p>
 
+![Profile Views](https://komarev.com/ghpvc/?username=vertex-pan&color=orange&style=flat-square)
+
 I specialize in building end-to-end ecosystems for high-traffic game servers, with a deep focus on **ARK: Survival Evolved (ASE)** and **ARK: Survival Ascended (ASA)**. My work spans low-level game engine hooking in C++, high-performance companion mobile apps (Flutter), robust web administration portals (Laravel), automation bots (Node.js), and asset extraction pipelines (Python).
 
 ---
 
 ### 🌐 Live Ecosystem Status
-[![Web Portal](https://img.shields.io/badge/Live_Dashboard-Visit_Web-orange?style=for-the-badge&logo=laravel)](http://ark.lokagamers.com)
+[![Website](https://img.shields.io/badge/Website-lokagamers.com-orange?style=for-the-badge&logo=laravel)](https://lokagamers.com/)
 [![Android App](https://img.shields.io/badge/Android_App-In_Development-blue?style=for-the-badge&logo=android)](#)
 
 ---
@@ -160,11 +162,43 @@ graph TD
 
 ---
 
+### 🖥️ Infrastructure & Cluster Specs
+
+Since I manage high-traffic game clusters (including automation, backups, and live player data sync), here is the technical infrastructure stack and dedicated server specifications I administer:
+
+| Hardware / Stack Component | Specification |
+| --- | --- |
+| **Server Host OS** | Microsoft Windows Server 2022 Standard |
+| **Processor (CPU)** | Intel(R) Xeon(R) E-2388G CPU @ 3.20GHz (8 Cores, 16 Threads) |
+| **Memory (RAM)** | 64.0 GB Installed Physical Memory |
+| **Server Motherboard** | ASRockRack E3C252D4U-2T/OVH (Dedicated Server Node) |
+| **Cluster Management** | ARK Server Manager (ASM) |
+| **Low-Level Hooking** | ARK Server API (DLL Plugin System) |
+| **Database Architecture** | MySQL (Dual-connection setups for live state & web state) |
+| **Command Delivery** | Native RCON Protocol Remote Execution |
+
+---
+
+### 📲 Connect with LokaGamers
+[![Website](https://img.shields.io/badge/Website-lokagamers.com-blue?style=for-the-badge&logo=google-chrome&logoColor=white)](https://lokagamers.com/)
+[![Discord](https://img.shields.io/badge/Discord-Join_Hub-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/lokagamers)
+[![Facebook](https://img.shields.io/badge/Facebook-lokagamers-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](http://facebook.com/lokagamers)
+[![Instagram](https://img.shields.io/badge/Instagram-lokagamers-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](http://instagram.com/lokagamers)
+[![X](https://img.shields.io/badge/X-lokagamers-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/lokagamers)
+[![YouTube](https://img.shields.io/badge/YouTube-@lokagamersofficial-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@lokagamersofficial)
+[![TikTok](https://img.shields.io/badge/TikTok-@lokagamers-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://www.tiktok.com/@lokagamers)
+
+---
+
 ### 📈 GitHub Stats
 
 <p align="left">
-  <img src="https://github-stats-extended.vercel.app/api?username=vertex-pan&show_icons=true&theme=material-palenight" alt="GitHub Stats" />
-  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=vertex-pan&layout=compact&theme=material-palenight&langs_count=6" alt="Top Languages" />
+  <img src="https://github-stats-extended.vercel.app/api?username=vertex-pan&show_icons=true&theme=material-palenight" height="195" alt="GitHub Stats" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=vertex-pan&layout=compact&theme=material-palenight&langs_count=6" height="195" alt="Top Languages" />
+</p>
+
+<p align="left">
+  <img src="https://streak-stats.demolab.com/?user=vertex-pan&theme=material-palenight" height="195" alt="GitHub Streak Stats" />
 </p>
 
 ---
