@@ -20,42 +20,56 @@ I specialize in building end-to-end ecosystems for high-traffic game servers, wi
 
 ### 🏛️ System Architecture
 
-Here is how the components of the game server ecosystem communicate and synchronize data:
+Here is the complete data flow, integration pipeline, and hardware administration map of the game server ecosystem:
 
 ```mermaid
 graph TD
-    classDef default fill:#1e1e24,stroke:#333,stroke-width:2px,color:#fff;
+    classDef default fill:#1e1e24,stroke:#444,stroke-width:2px,color:#fff;
     classDef highlight fill:#f59e0b,stroke:#d97706,stroke-width:2px,color:#000;
-    
-    subgraph Game Server [ARK Server Cluster]
-        A[Game Server Process] <-->|Ark Server API Hooking| B[C++ Plugins: LokaCrossChat, LokaCloud, Notifier]
+    classDef storage fill:#2563eb,stroke:#1d4ed8,stroke-width:2px,color:#fff;
+
+    subgraph Infrastructure [Server Nodes Layout]
+        MainNode[Main Server: Intel Xeon]
+        TestNode[Tester Server: AMD EPYC]
+        SupportNode[Support Server: Intel Xeon VM]
     end
-    
+
+    subgraph Game_Cluster [ARK Game Server Node]
+        ASM[ARK Server Manager - ASM] -->|Administers & Deploys| GameServer[ARK Game Process]
+        GameServer <-->|Low-Level Hooks| Plugins[C++ Plugins: CrossChat, LokaCloud, Notifier, PVPZone]
+    end
+
+    subgraph Data_Extraction [Asset Extraction Pipeline]
+        Assets[(ARK Game Files .uasset)] -->|Reads Assets| Purlovia[Purlovia Python Extractor]
+        Purlovia -->|Generates JSON & Rates Config| Configs[Static Configs & rates.ini]
+    end
+
     subgraph Database [Database Layer]
-        C[(MySQL: Game & Web DB)]
+        MySQL[(MySQL Databases)]
     end
-    
-    subgraph Web [Web Backend & Portal]
-        D[Loka Laravel Dashboard]
+
+    subgraph Web_Services [Web Backend & Management]
+        Laravel[Loka Laravel Dashboard]
+        Gateways[PayPal & Sociabuzz APIs] -->|Automated Webhooks| Laravel
     end
-    
+
     subgraph Clients [User Interfaces]
-        E[Flutter Mobile Client]
-        F[Discord Bot]
-    end
-    
-    subgraph Gateways [Payment Systems]
-        G[PayPal & Sociabuzz API]
+        Flutter[Flutter Mobile Client]
+        Discord[Discord Bot]
     end
 
-    B <-->|Live SQL Sync| C
-    D <-->|Eloquent ORM & Transaksi| C
-    D -->|RCON Commands| A
-    E <-->|REST APIs / Cookie Session Bridge| D
-    F <-->|RCON status & Chat Broadcast| A
-    G -->|Automated Webhooks| D
+    %% Communications
+    Configs -->|Served by Web / Whitelisted URL| Laravel
+    GameServer -->|Downloads rates.ini| Configs
+    Plugins <-->|Live SQL Stacking & Player Data| MySQL
+    Laravel <-->|Eloquent ORM & Web State DB| MySQL
+    Laravel -->|RCON Command Delivery| GameServer
+    Flutter <-->|REST API & WebView Session Bridge| Laravel
+    Discord <-->|RCON Status Polling & Chat Broadcast| GameServer
 
-    class D,E,B highlight;
+    %% Styling
+    class Laravel,Flutter,Plugins highlight;
+    class MySQL,Assets storage;
 ```
 
 ---
@@ -164,18 +178,19 @@ graph TD
 
 ### 🖥️ Infrastructure & Cluster Specs
 
-Since I manage high-traffic game clusters (including automation, backups, and live player data sync), here is the technical infrastructure stack and dedicated server specifications I administer:
+Since I manage high-traffic game clusters (including automation, backups, and live player data sync), here is the technical infrastructure stack and dedicated server nodes I administer:
 
-| Hardware / Stack Component | Specification |
-| --- | --- |
-| **Server Host OS** | Microsoft Windows Server 2022 Standard |
-| **Processor (CPU)** | Intel(R) Xeon(R) E-2388G CPU @ 3.20GHz (8 Cores, 16 Threads) |
-| **Memory (RAM)** | 64.0 GB Installed Physical Memory |
-| **Server Motherboard** | ASRockRack E3C252D4U-2T/OVH (Dedicated Server Node) |
-| **Cluster Management** | ARK Server Manager (ASM) |
-| **Low-Level Hooking** | ARK Server API (DLL Plugin System) |
-| **Database Architecture** | MySQL (Dual-connection setups for live state & web state) |
-| **Command Delivery** | Native RCON Protocol Remote Execution |
+| Server Node | Operating System | CPU Processor | Installed RAM | Hardware / Motherboard |
+| --- | --- | --- | --- | --- |
+| **Main Production** | Windows Server 2022 Std | Intel Xeon E-2388G @ 3.20GHz (8C/16T) | 64.0 GB | ASRockRack E3C252D4U-2T/OVH |
+| **Tester & Dev** | Windows Server 2022 Std | AMD EPYC 4344P @ 3.80GHz (8C/16T) | 64.0 GB | ASRockRack B650D4U |
+| **Support & Utility** | Windows 10 Pro | Intel Xeon E5-2698 v4 @ 2.20GHz (8 Cores) | 32.0 GB | VMware Virtual Machine |
+
+#### 🛠️ Technology Stack
+*   **Cluster Management:** ARK Server Manager (ASM)
+*   **Low-Level Hooking:** ARK Server API (DLL Plugin System)
+*   **Database Architecture:** MySQL (Dual-connection setups for live state & web state)
+*   **Command Delivery:** Native RCON Protocol Remote Execution
 
 ---
 
