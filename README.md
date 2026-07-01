@@ -1,4 +1,4 @@
-# Hi there, I'm [Your Name] 👋
+# Hi there, I'm Irvan Prastyo 👋
 
 <p align="left">
   <a href="https://git.io/typing-svg">
