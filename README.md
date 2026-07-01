@@ -83,6 +83,10 @@ graph TD
       <br>C++
     </td>
     <td align="center" width="110">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" width="48" height="48" alt="Go" />
+      <br>Go (Golang)
+    </td>
+    <td align="center" width="110">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="48" height="48" alt="PHP" />
       <br>PHP
     </td>
@@ -94,6 +98,8 @@ graph TD
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="48" height="48" alt="JavaScript" />
       <br>JavaScript
     </td>
+  </tr>
+  <tr>
     <td align="center" width="110">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="48" height="48" alt="Python" />
       <br>Python
@@ -102,8 +108,6 @@ graph TD
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="48" height="48" alt="MySQL" />
       <br>MySQL / SQL
     </td>
-  </tr>
-  <tr>
     <td align="center" width="110">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" width="48" height="48" alt="Laravel" />
       <br>Laravel
@@ -116,6 +120,8 @@ graph TD
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="48" height="48" alt="Node.js" />
       <br>Node.js
     </td>
+  </tr>
+  <tr>
     <td align="center" width="110">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="48" height="48" alt="Tailwind CSS" />
       <br>Tailwind CSS
@@ -128,8 +134,6 @@ graph TD
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="48" height="48" alt="CSS3" />
       <br>CSS3
     </td>
-  </tr>
-  <tr>
     <td align="center" width="110">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" width="48" height="48" alt="Android" />
       <br>Android SDK
@@ -138,6 +142,8 @@ graph TD
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="48" height="48" alt="Git" />
       <br>Git
     </td>
+  </tr>
+  <tr>
     <td align="center" width="110">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="48" height="48" alt="VS Code" />
       <br>VS Code
@@ -151,13 +157,17 @@ graph TD
       <br>Composer
     </td>
     <td align="center" width="110">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" width="48" height="48" alt="npm" />
-      <br>npm
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" width="48" height="48" alt="Windows Batch" />
+      <br>Windows Batch
+    </td>
+    <td align="center" width="110">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="48" height="48" alt="Bash" />
+      <br>Bash / Shell
     </td>
   </tr>
 </table>
 
-*   **Core Languages:** C++, PHP, Dart, JavaScript (Node.js), Python, SQL, Windows Batch Scripting (`.bat` / `.cmd`)
+*   **Core Languages:** C++, Go (Golang), PHP, Dart, JavaScript (Node.js), Python, SQL, Windows Batch Scripting (`.bat` / `.cmd`)
 *   **Web Frameworks & Libraries:** Laravel (MVC), Tailwind CSS v4, DaisyUI, Leaflet.js (Interactive Maps), Blade Templating, Vite
 *   **Mobile Technologies:** Flutter SDK, Android SDK, WebView (with Session/Cookie Injector)
 *   **Protocols & APIs:** RCON Protocol (Game Server Remote Execution), Steam OpenID / Web API, PayPal Checkout SDK, Sociabuzz Payment Gateway Webhooks
@@ -193,6 +203,11 @@ graph TD
 *   **LokaCloud:** Custom server database synchronizer storing player inventory data safely into external MySQL servers.
 *   **Notifier-Loka-System:** Detects in-game world events (e.g., Space Biome changes, Dino spawn events, Extinction cycles) and uses webhooks to broadcast them to external networks.
 *   **LokaPVPZone & LokaRoyaleZone:** Dynamic arena zone management adjusting actor damage multipliers and boundary logic.
+
+#### 🐹 Go Backend Utilities
+*High-performance background programs and payload handlers written in Go (Golang).*
+*   **ImportDB-ARK:** A specialized migration utility designed to extract, transform, and import heavy map datasets (aberration, extinction, genesis maps, engrams, and loot crates) into the MySQL cluster database.
+*   **Receiver-KingIndo:** An automated receiver and webhook handler responding to server state payloads and executing automated cluster resets.
 
 #### 🤖 ARK-Loka-BOT (Discord Automation)
 *A custom Node.js bot for Discord automation and server monitoring.*
