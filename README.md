@@ -1,7 +1,7 @@
-# Hi there, I'm Irvan Prastyo 👋
+# Hi there, I'm [Your Name] 👋
 ### Game Server Developer & Fullstack Game Ecosystem Architect 🚀
 
-I specialize in building end-to-end ecosystems for game servers, with a deep focus on **ARK: Survival Evolved (ASE)** and **ARK: Survival Ascended (ASA)**. I develop high-performance C++ server plugins, robust Laravel web dashboards, cross-platform mobile apps (Flutter), and interactive Discord bots to connect players, server managers, and in-game states.
+I specialize in building end-to-end ecosystems for high-traffic game servers, with a deep focus on **ARK: Survival Evolved (ASE)** and **ARK: Survival Ascended (ASA)**. My work spans low-level game engine hooking in C++, high-performance companion mobile apps (Flutter), robust web administration portals (Laravel), automation bots (Node.js), and asset extraction pipelines (Python).
 
 ---
 
@@ -9,93 +9,101 @@ I specialize in building end-to-end ecosystems for game servers, with a deep foc
 
 <table>
   <tr>
-    <td align="center" width="96">
+    <td align="center" width="110">
       <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/cpp/cpp.png" width="48" height="48" alt="C++" />
       <br>C++
     </td>
-    <td align="center" width="96">
+    <td align="center" width="110">
       <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/php/php.png" width="48" height="48" alt="PHP" />
       <br>PHP
     </td>
-    <td align="center" width="96">
+    <td align="center" width="110">
       <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/dart/dart.png" width="48" height="48" alt="Dart" />
       <br>Dart
     </td>
-    <td align="center" width="96">
+    <td align="center" width="110">
       <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" width="48" height="48" alt="JavaScript" />
       <br>JavaScript
     </td>
-    <td align="center" width="96">
+    <td align="center" width="110">
       <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" width="48" height="48" alt="Python" />
       <br>Python
     </td>
+    <td align="center" width="110">
+      <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/windows/windows.png" width="48" height="48" alt="Windows Batch" />
+      <br>Batch / Cmd
+    </td>
   </tr>
   <tr>
-    <td align="center" width="96">
+    <td align="center" width="110">
       <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/laravel/laravel.png" width="48" height="48" alt="Laravel" />
       <br>Laravel
     </td>
-    <td align="center" width="96">
+    <td align="center" width="110">
       <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/flutter/flutter.png" width="48" height="48" alt="Flutter" />
       <br>Flutter
     </td>
-    <td align="center" width="96">
+    <td align="center" width="110">
       <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" width="48" height="48" alt="Node.js" />
       <br>Node.js
     </td>
-    <td align="center" width="96">
+    <td align="center" width="110">
       <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png" width="48" height="48" alt="MySQL" />
       <br>MySQL
     </td>
-    <td align="center" width="96">
+    <td align="center" width="110">
+      <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tailwind/tailwind.png" width="48" height="48" alt="Tailwind CSS" />
+      <br>Tailwind / DaisyUI
+    </td>
+    <td align="center" width="110">
       <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" width="48" height="48" alt="Git" />
       <br>Git
     </td>
   </tr>
 </table>
 
-* **Languages:** C++, PHP, Dart, JavaScript (Node.js), Python, SQL
-* **Web Frameworks:** Laravel (MVC), Tailwind CSS, DaisyUI, Vite, Blade templating
-* **Mobile Technologies:** Flutter SDK, Android SDK, iOS SDK, WebView session-bridge integrations
-* **Specialized APIs & Integrations:** Steam API/OpenID, PayPal SDK, Sociabuzz Payment Gateway Webhook, RCON Protocol
-* **Tools & Server Management:** Ark Server API (C++ hooking), Ark Server Manager (ASM), Git, Visual Studio
+*   **Core Languages:** C++, PHP, Dart, JavaScript (Node.js), Python, SQL, Windows Batch Scripting (`.bat` / `.cmd`)
+*   **Web Frameworks & Libraries:** Laravel (MVC), Tailwind CSS v4, DaisyUI, Leaflet.js (Interactive Maps), Blade Templating, Vite
+*   **Mobile Technologies:** Flutter SDK, Android SDK, WebView (with Session/Cookie Injector)
+*   **Protocols & APIs:** RCON Protocol (Game Server Remote Execution), Steam OpenID / Web API, PayPal Checkout SDK, Sociabuzz Payment Gateway Webhooks
+*   **Game Engine Integration:** Ark Server API (C++ Hooking), Unreal Engine Asset Extractor (uasset serialization & schema parsing)
+*   **Dev Tools & Environments:** Visual Studio (MSBuild), VS Code, npm, Composer, Git/GitHub, Ark Server Manager (ASM)
 
 ---
 
 ### 📂 Highlighted Projects
 
 #### 🎮 [Loka Laravel Dashboard](https://github.com/vertex-pan/loka-laravel-dashboard) (Web Ecosystem Portal)
-*A premium Web UI dashboard and payment integration platform for game servers.*
-* **Tech Stack:** PHP (Laravel), Tailwind CSS & DaisyUI, Vite, JavaScript, MySQL, Steam OpenID
-* **Key Features:**
-  * **Secure Steam Integration:** Login using Steam ID 64 with automatic user registration linked to active in-game profiles.
-  * **Dual Gateway Payment System:** Integrated with **Sociabuzz** (for local Indonesian payment options like QRIS, GoPay, OVO, DANA) and **PayPal** (for international credit card payments). Automated webhook handler securely updates timed VIP membership permissions via SQL transaction locks.
-  * **Game & Store Integrations:** Fully custom-built item shop (`/shop`) communicating directly with database servers via AJAX. Items purchased trigger dynamic in-game item delivery via RCON commands and backend task runner queues.
-  * **Interactive Tools & Real-Time Stats:** Interactive live maps (Leaflet), online player count trackers, and server status cards pulling dynamic data directly from local servers.
-  * **Advanced Admin Impersonation:** Secure Signed URL-based bypass login for administrators to troubleshoot and experience the portal from a player's perspective.
+*A high-end player web portal and automated billing system for game server clusters.*
+*   **Tech Stack:** PHP (Laravel), Tailwind CSS & DaisyUI, Vite, JavaScript, MySQL, Steam OpenID
+*   **Key Features:**
+    *   **Secure Steam Integration:** Direct authentication using Steam ID 64 with automatic database profiling linked to live game characters.
+    *   **Automated Payment Gateways:** Dual checkout integration featuring **Sociabuzz** (for local Indonesian payment channels: QRIS, GoPay, OVO, DANA, Virtual Accounts) and **PayPal** (for international credit cards). Features automated webhook processing with SQL locking to manage timed VIP tier stacking.
+    *   **Item Store & Cloud Delivery:** Custom-built shop `/shop` querying live databases. Purchases automatically generate RCON item delivery queues (extracting blueprint paths, parameters, and count) dispatched directly to active servers.
+    *   **Server Monitoring:** Live Leaflet.js interactive maps, real-time online player counters, and server status cards caching query ports asynchronously.
+    *   **Admin Impersonation:** Secure Signed URL-based bypass login allowing server admins to audit dashboard interactions from any player's perspective.
 
 #### 📱 [LokaGamers Mobile Client](https://github.com/vertex-pan/LokaGamers) (Cross-Platform Mobile App)
-*A high-performance companion app for players, built with Flutter.*
-* **Tech Stack:** Dart, Flutter SDK, WebViewCookieManager, Shared Preferences
-* **Key Features:**
-  * **Native Authentication & Auto-Login:** Stores session cookies locally and uses an active session injection system to log players into embedded WebViews (e.g., Live Map and Leaderboards) without re-authenticating.
-  * **Game Utilities (Loka Tools):** Native screens for Wild Dino Finder (featuring search limits and autocomplete fields), live Tribe Log viewer with multi-server keyword filter, and Server Status checker.
-  * **Remote Commands:** RCON-integrated client controls allowing users to trigger live game commands (e.g., instant "Kill Me" command when stuck).
-  * **In-App Shop:** Clean, Material Design 3-inspired native catalog for purchasing store items, managing cloud inventories, and sending items instantly to the game cluster.
+*A dedicated mobile application companion for players to manage their characters and track servers.*
+*   **Tech Stack:** Dart, Flutter SDK, WebViewCookieManager, Shared Preferences
+*   **Key Features:**
+    *   **WebView Cookie Bridge:** Native login screen saving session cookies locally. It uses `WebViewCookieManager` to inject active sessions into embedded WebViews (Live Map & Leaderboards) to bypass web re-authentication.
+    *   **In-App Game Utilities:** Native screens for autocomplete Wild Dino Finder (with daily query quotas), live multi-server Tribe Log viewer with keyword filtering, and Server Status cards.
+    *   **Remote RCON Execution:** Interactive commands allowing players to trigger actions like instant "Kill Me" to unstuck characters from their mobile device.
+    *   **Mobile Item Shop:** Full native UI catalog for store items, purchase checkout, and cloud inventory management to send stored items instantly to in-game characters.
 
 #### 🧩 C++ Server Plugins (Ark Server API Hooking)
-*Low-level, high-performance plugin systems written in native C++ to hook into game engines.*
-* **LokaCrossChat:** A robust C++ plugin that hooks into the game chat commands and coordinates cross-server communications, allowing cluster-wide chat sync in real time.
-* **LokaCloud:** A custom cloud inventory and storage utility synchronizing player inventories with external databases securely.
-* **Notifier-Loka-System:** Event detection plugin that monitors server-side occurrences (like genesis space biomes, specific spawn events, and extinction cycles) and coordinates with external APIs to broadcast alerts.
-* **LokaPVPZone / LokaRoyaleZone:** C++ systems managing custom gameplay zones, dynamically adjusting game damage parameters, and automating arena event boundaries.
+*Low-level, high-performance C++ DLLs hooking into the server executable to inject custom logic.*
+*   **LokaCrossChat:** Hooks into server chat events to synchronize chat messages across multiple game servers in the cluster in real time.
+*   **LokaCloud:** Custom server database synchronizer storing player inventory data safely into external MySQL servers.
+*   **Notifier-Loka-System:** Detects in-game world events (e.g., Space Biome changes, Dino spawn events, Extinction cycles) and uses webhooks to broadcast them to external networks.
+*   **LokaPVPZone & LokaRoyaleZone:** Dynamic arena zone management adjusting actor damage multipliers and boundary logic.
 
 #### 🤖 ARK-Loka-BOT (Discord Automation)
 *A custom Node.js bot for Discord automation and server monitoring.*
-* **Tech Stack:** JavaScript, Node.js, Discord.js, RCON client
-* **Key Features:**
-  * Real-time server status polling and broadcast to specific Discord status channels.
-  * Integration with RCON to run server checks, manage channel structures, and display server rates.
+*   **Tech Stack:** JavaScript, Node.js, Discord.js, RCON Client
+*   **Key Features:**
+    *   Real-time server stats reporting, role synchronization based on VIP purchases, and automated RCON command executors for moderators.
 
 ---
 
